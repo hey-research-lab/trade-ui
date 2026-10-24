@@ -82,7 +82,7 @@ const EXPLORER_HOST: Record<ChainId, { host: string; accountPath: string }> = {
   eth: { host: "etherscan.io", accountPath: "address" },
   bsc: { host: "bscscan.com", accountPath: "address" },
   base: { host: "basescan.org", accountPath: "address" },
-  robinhood: { host: "explorer.mainnet.chain.robinhood.com", accountPath: "address" },
+  robinhood: { host: "robinhoodchain.blockscout.com", accountPath: "address" },
 };
 
 export function explorerUrl(kind: ExplorerKind, value: string, id: ChainId = getActiveChain()): string {
